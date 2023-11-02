@@ -1,0 +1,27 @@
+{
+    "name": "eosjs_scripts",
+    "version": "1.0.0",
+    "description": "This is the default package.json generated for your project",
+    "main": "index.js",
+    "scripts": {
+        "start": "mocha --reporter mocha-junit-reporter --reporter-options mochaFile=junit.xml",
+        "test": "EOS_URL=https://eos.test.REDACTED mocha --reporter mocha-junit-reporter --reporter-options mochaFile=junit.xml",
+        "start-watch": "EOS_URL=https://eos.test.REDACTED mocha --watch",
+        "resource-report": "eoslime test --path ./test/ --resource-usage --reporter mocha-junit-reporter --reporter-options mochaFile=junit.xml"
+    },
+    "devDependencies": {
+        "mocha": "^9.1.1",
+        "mocha-junit-reporter": "^2.0.0"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "eosjs": "^22.1.0",
+        "eosjs-ecc": "^4.0.7",
+        "nanoid": "^3.1.25",
+        "node": "^16.6.1",
+        "node-fetch": "^2.6.1",
+        "REDACTEDstore": "^2.0.0"
+    }
+}
